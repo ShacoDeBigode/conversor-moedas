@@ -1,0 +1,22 @@
+.conversor-moedas {
+    h2 {
+      color: #3f51b5;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      input {
+        margin: 0.5rem 0;
+      }
+      button {
+        background-color: #3f51b5;
+        color: #fff;
+        margin-top: 1rem;
+      }
+    }
+    p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+  }
+  

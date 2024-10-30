@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    // Aqui você pode adicionar outros componentes que deseja declarar
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    // Adicione outros módulos Angular aqui, como FormsModule, HttpClientModule, etc.
   ],
   providers: [],
   bootstrap: [AppComponent]

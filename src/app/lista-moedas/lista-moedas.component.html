@@ -1,0 +1,22 @@
+<div class="lista-moedas">
+    <h2>Lista de Moedas</h2>
+    <mat-table [dataSource]="dataSource" matSort>
+      <!-- Coluna Símbolo -->
+      <ng-container matColumnDef="simbolo">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Símbolo</mat-header-cell>
+        <mat-cell *matCellDef="let moeda">{{ moeda.symbol }}</mat-cell>
+      </ng-container>
+  
+      <!-- Coluna Nome -->
+      <ng-container matColumnDef="nome">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Nome</mat-header-cell>
+        <mat-cell *matCellDef="let moeda">{{ moeda.name }}</mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="colunasExibidas"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: colunasExibidas;"></mat-row>
+    </mat-table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  </div>
+  

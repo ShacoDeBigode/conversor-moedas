@@ -1,0 +1,15 @@
+<div class="conversor-moedas">
+    <h2>Conversão de Moedas</h2>
+    <form (ngSubmit)="converterMoeda()">
+      <input type="number" [(ngModel)]="valor" placeholder="Valor" required />
+      <input type="text" [(ngModel)]="moedaOrigem" placeholder="Moeda de Origem" required />
+      <input type="text" [(ngModel)]="moedaDestino" placeholder="Moeda de Destino" required />
+      <button type="submit">Converter</button>
+    </form>
+  
+    <div *ngIf="valorConvertido">
+      <p>Valor Convertido: {{ valorConvertido }}</p>
+      <p>Taxa de Conversão: {{ taxaConversao }}</p>
+    </div>
+  </div>
+  
