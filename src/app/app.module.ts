@@ -1,15 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort'; // Se você estiver usando a ordenação
 import { AppComponent } from './app.component';
+import { HistoricoConversoesComponent } from './historico-conversoes/historico-conversoes.component';
+import { ListaMoedasComponent } from './lista-moedas/lista-moedas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    // Aqui você pode adicionar outros componentes que deseja declarar
+    HistoricoConversoesComponent,
+    ListaMoedasComponent,
   ],
   imports: [
     BrowserModule,
-    // Adicione outros módulos Angular aqui, como FormsModule, HttpClientModule, etc.
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule, // Se você estiver usando a ordenação
   ],
   providers: [],
   bootstrap: [AppComponent]
